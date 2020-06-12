@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,8 +17,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        FirebaseApp.configure()
+        configureInitialVC()
         return true
+    }
+    
+    func configureInitialVC(){
+        var initialVC : UIViewController
+        let storyborad = UIStoryboard(name: "Welcome", bundle: nil)
+        
+        if Auth.auth().currentUser != nil  {
+            initialVC = storyborad.instantiateViewController(withIdentifier: "TabBarVC")
+        }
+        else{
+            initialVC = storyborad.instantiateViewController(withIdentifier: "WelcomeVC")
+        }
+        
+        window?.rootViewController = initialVC
+        window?.makeKeyAndVisible()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
