@@ -26,6 +26,7 @@
 		E31E8B6D240A620E0029856A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E31E8B6C240A620E0029856A /* Assets.xcassets */; };
 		E3204218249153C80072126E /* MessageApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3204217249153C80072126E /* MessageApi.swift */; };
 		E320421A2494FC1E0072126E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32042192494FC1D0072126E /* Message.swift */; };
+		E320421C249505AA0072126E /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E320421B249505AA0072126E /* MessageTableViewCell.swift */; };
 		E3B15AED23DF3AE1005BC158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B15AEC23DF3AE1005BC158 /* AppDelegate.swift */; };
 		E3B15AEF23DF3AE1005BC158 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B15AEE23DF3AE1005BC158 /* ViewController.swift */; };
 		E3B15AF723DF3AE2005BC158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3B15AF523DF3AE2005BC158 /* LaunchScreen.storyboard */; };
@@ -56,6 +57,7 @@
 		E31E8B6C240A620E0029856A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3204217249153C80072126E /* MessageApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageApi.swift; sourceTree = "<group>"; };
 		E32042192494FC1D0072126E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		E320421B249505AA0072126E /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		E3B15AE923DF3AE1005BC158 /* Campus Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Campus Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3B15AEC23DF3AE1005BC158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3B15AEE23DF3AE1005BC158 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				E3B15AF823DF3AE2005BC158 /* Info.plist */,
 				E31E8B6C240A620E0029856A /* Assets.xcassets */,
 				E3B15AFE23DF3AFA005BC158 /* Welcome.storyboard */,
+				E320421B249505AA0072126E /* MessageTableViewCell.swift */,
 				E3178B5B247D864E0049F8B7 /* ChatViewController.swift */,
 				E3CC5DC6240BA86E00C769DB /* PeopleTableViewController.swift */,
 				E3178B57247D41510049F8B7 /* User.swift */,
@@ -279,6 +282,7 @@
 				E3CC5DC5240A67CA00C769DB /* MessageTableViewController.swift in Sources */,
 				E3178B5C247D864E0049F8B7 /* ChatViewController.swift in Sources */,
 				E31BB5CC23FC60F700ACAC82 /* Ref.swift in Sources */,
+				E320421C249505AA0072126E /* MessageTableViewCell.swift in Sources */,
 				E31BB5BC23F9592D00ACAC82 /* SignInViewController.swift in Sources */,
 				E31BB5B623F9421700ACAC82 /* SignUpViewController.swift in Sources */,
 				E3B15AED23DF3AE1005BC158 /* AppDelegate.swift in Sources */,
