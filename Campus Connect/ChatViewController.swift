@@ -32,7 +32,17 @@ class ChatViewController: UIViewController {
         setupInputContainer()
 		setUpNavigationBar()
         setupTableView()
+        observeMessages()
         // Do any additional setup after loading the view.
+    }
+    
+    func observeMessages(){
+        Api.message.receiveMessage(from: Api.user.currentUserId, to: partnerId) { (message) in
+            print(message.id)
+        }
+        Api.message.receiveMessage(from: partnerId, to: Api.user.currentUserId) { (message) in
+            print(message.id)
+        }
     }
     
     func setupPicker(){
