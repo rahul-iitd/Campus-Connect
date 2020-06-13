@@ -26,6 +26,72 @@ class MessageTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        bubbleView.layer.cornerRadius = 15
+		bubbleView.clipsToBounds = true
+        bubbleView.layer.borderWidth = 0.45
+        textMessageLabel.numberOfLines = 0
+        photoMessage.layer.cornerRadius = 15
+        photoMessage.clipsToBounds = true
+        profileImage.layer.cornerRadius = 16
+        profileImage.clipsToBounds = true
+        
+        photoMessage.isHidden = true
+        photoMessage.isHidden = true
+        textMessageLabel.isHidden = true
+        
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        photoMessage.isHidden = true
+        photoMessage.isHidden = true
+        textMessageLabel.isHidden = true
+    }
+    
+    func configureCell(uid: String, message: Message, image: UIImage){
+        let text = message.text
+        if !text.isEmpty{
+            textMessageLabel.isHidden = false
+            textMessageLabel.text = message.text
+            
+            let widthValue = text.estimateFrameForText(text).width + 44
+            
+            if widthValue<75{widthConstraint.constant = 75}
+            else{widthConstraint.constant = widthValue}
+            
+            dateLabel.textColor = .lightGray
+            
+        }
+        else{
+            photoMessage.isHidden = false
+            photoMessage.loadImage(message.imageUrl)
+            bubbleView.layer.borderColor = UIColor.clear.cgColor
+            widthConstraint.constant = 250
+            dateLabel.textColor = .white
+        }
+        
+        if uid == message.from {
+            bubbleView.backgroundColor = UIColor.groupTableViewBackground
+            bubbleView.layer.borderColor = UIColor.clear.cgColor
+			bubbleRightConstraint.constant = 7
+            bubbleLeftConstraint.constant = UIScreen.main.bounds.width - widthConstraint.constant - bubbleRightConstraint.constant
+            
+        }
+        
+        else {
+            profileImage.isHidden = false
+            profileImage.image = image
+            bubbleView.backgroundColor = UIColor.white
+            bubbleView.layer.borderColor = UIColor.lightGray.cgColor
+            bubbleLeftConstraint.constant = 55
+            bubbleRightConstraint.constant = UIScreen.main.bounds.width - widthConstraint.constant - bubbleLeftConstraint.constant
+        }
+        
+        let date = Date(timeIntervalSince1970: message.date)
+        let dateString = timeAgoSinceDate(date, currentDate: Date(), numericDates: true)
+        dateLabel.text = dateString
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -35,3 +101,6 @@ class MessageTableViewCell: UITableViewCell {
     }
 
 }
+
+
+
