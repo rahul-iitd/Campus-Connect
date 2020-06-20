@@ -44,6 +44,10 @@ class Ref {
         return databaseInbox.child(from).child(to)
     }
     
+    func databaseInboxForUser(uid: String)->DatabaseReference{
+        return databaseInbox.child(uid)
+    }
+    
     // Storage Ref
     
 	let storageRoot = Storage.storage().reference(forURL: STORAGE_LINK)

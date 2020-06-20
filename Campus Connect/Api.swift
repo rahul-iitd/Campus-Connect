@@ -10,5 +10,5 @@ import Foundation
 struct Api {
     static var user = UserApi()
     static var message = MessageApi()
-    
+    static var inbox = InboxApi()
 }
