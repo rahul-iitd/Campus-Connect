@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		882D519CBB060CB0B0A5644E /* Pods_Campus_Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DB7A7FED05EFDBC85FCBFA /* Pods_Campus_Connect.framework */; };
 		E3167FDA249CDB7100C353AB /* ChatViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3167FD9249CDB7000C353AB /* ChatViewController+Extension.swift */; };
+		E3167FDC249E321B00C353AB /* Inbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3167FDB249E321B00C353AB /* Inbox.swift */; };
 		E3178B58247D41510049F8B7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3178B57247D41510049F8B7 /* User.swift */; };
 		E3178B5A247D6EEE0049F8B7 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3178B59247D6EEE0049F8B7 /* Extension.swift */; };
 		E3178B5C247D864E0049F8B7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3178B5B247D864E0049F8B7 /* ChatViewController.swift */; };
@@ -41,6 +42,7 @@
 		5938EFE9E850EB03F4B4EF30 /* Pods-Campus Connect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Campus Connect.release.xcconfig"; path = "Target Support Files/Pods-Campus Connect/Pods-Campus Connect.release.xcconfig"; sourceTree = "<group>"; };
 		96B33B7E3F6AC0DC83540649 /* Pods-Campus Connect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Campus Connect.debug.xcconfig"; path = "Target Support Files/Pods-Campus Connect/Pods-Campus Connect.debug.xcconfig"; sourceTree = "<group>"; };
 		E3167FD9249CDB7000C353AB /* ChatViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatViewController+Extension.swift"; sourceTree = "<group>"; };
+		E3167FDB249E321B00C353AB /* Inbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inbox.swift; sourceTree = "<group>"; };
 		E3178B57247D41510049F8B7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E3178B59247D6EEE0049F8B7 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		E3178B5B247D864E0049F8B7 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -129,11 +131,11 @@
 				E3B15AF823DF3AE2005BC158 /* Info.plist */,
 				E31E8B6C240A620E0029856A /* Assets.xcassets */,
 				E3B15AFE23DF3AFA005BC158 /* Welcome.storyboard */,
+				E3167FDB249E321B00C353AB /* Inbox.swift */,
 				E320421B249505AA0072126E /* MessageTableViewCell.swift */,
 				E3178B5B247D864E0049F8B7 /* ChatViewController.swift */,
 				E3167FD9249CDB7000C353AB /* ChatViewController+Extension.swift */,
 				E3CC5DC6240BA86E00C769DB /* PeopleTableViewController.swift */,
-				E3178B57247D41510049F8B7 /* User.swift */,
 				E318769F2424CBDB001DB708 /* UserTableViewCell.swift */,
 				E3178B59247D6EEE0049F8B7 /* Extension.swift */,
 				E3CC5DC4240A67CA00C769DB /* MessageTableViewController.swift */,
@@ -147,6 +149,7 @@
 				E3204217249153C80072126E /* MessageApi.swift */,
 				E32042192494FC1D0072126E /* Message.swift */,
 				E31BB5C923FB04EE00ACAC82 /* StorageService.swift */,
+				E3178B57247D41510049F8B7 /* User.swift */,
 				E31BB5C723FAF10700ACAC82 /* UserApi.swift */,
 				E31BB5CB23FC60F700ACAC82 /* Ref.swift */,
 				E31BB5C323F9726900ACAC82 /* GoogleService-Info.plist */,
@@ -276,6 +279,7 @@
 				E31BB5BE23F95B2B00ACAC82 /* SignInViewController+UI.swift in Sources */,
 				E31876A02424CBDB001DB708 /* UserTableViewCell.swift in Sources */,
 				E3CC5DC7240BA86E00C769DB /* PeopleTableViewController.swift in Sources */,
+				E3167FDC249E321B00C353AB /* Inbox.swift in Sources */,
 				E320421A2494FC1E0072126E /* Message.swift in Sources */,
 				E3204218249153C80072126E /* MessageApi.swift in Sources */,
 				E3B15AEF23DF3AE1005BC158 /* ViewController.swift in Sources */,
